@@ -1,8 +1,8 @@
 const countTotalSalary = function(employees) {
     // твой код
-    const employeesNamn = Object.keys(employees);
+    //const employeesNamn = Object.keys(employees);
     let total = 0;
-    for (let employee of employeesNamn)
+    for (let employee in employees)
     {
        total += employees[employee];
     }

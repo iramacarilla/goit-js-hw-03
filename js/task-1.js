@@ -12,12 +12,16 @@ user['full time'] = true;
 user.hobby = 'skydiving';
 user.premium = false;
  
-const keys = Object.keys(user);
+for (const key in user) {
+  message += `${key}:${user[key]}\n`;
+}
+
+//const keys = Object.keys(user);
 // Write code under this line
- for (key of keys)
- {
-     message += `${key}:${user[key]}\n`;
- }
+ //for (key of keys)
+ //{
+   //  message += `${key}:${user[key]}\n`;
+ //}
  
 console.log(message); 
 /*
